@@ -1,0 +1,515 @@
+[gd_scene load_steps=13 format=3 uid="uid://srvgomeq4a8v"]
+
+[ext_resource type="Texture2D" uid="uid://c06get63e0ddt" path="res://assets/models/stocks/leaderboard_page.png" id="1_u64qf"]
+[ext_resource type="Script" path="res://scenes/leaderboard_page.gd" id="2_1qp70"]
+[ext_resource type="Texture2D" uid="uid://ch1yj0cuvs7q3" path="res://assets/models/stocks/phone_clicked.jpg" id="3_ro4ad"]
+[ext_resource type="FontFile" uid="uid://b3yf1mraxth7i" path="res://assets/font/regular.otf" id="4_00lb1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ial81"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fbqfw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_176vx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a2gmk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rvas3"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_k0e7y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f65l5"]
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_btg8a"]
+font = ExtResource("4_00lb1")
+font_size = 14
+
+[node name="leaderboard_page" type="Sprite2D"]
+position = Vector2(577.75, 322.5)
+scale = Vector2(0.962886, 0.954142)
+texture = ExtResource("1_u64qf")
+script = ExtResource("2_1qp70")
+
+[node name="buy_stocks2" type="Button" parent="."]
+offset_left = -576.135
+offset_top = -127.34
+offset_right = -472.135
+offset_bottom = -96.3396
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.662745, 0.662745, 0.662745, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ial81")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fbqfw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_176vx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_a2gmk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rvas3")
+text = "BUY STOCKS"
+icon = SubResource("ViewportTexture_k0e7y")
+flat = true
+alignment = 0
+
+[node name="home_button3" type="TextureButton" parent="."]
+offset_left = -566.788
+offset_top = -224.81
+offset_right = -69.7838
+offset_bottom = 325.191
+scale = Vector2(0.15, 0.15)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_ro4ad")
+
+[node name="name1" type="Label" parent="."]
+offset_left = -418.766
+offset_top = -336.0
+offset_right = -339.766
+offset_bottom = -288.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name2" type="Label" parent="."]
+offset_left = -418.766
+offset_top = -286.0
+offset_right = -339.766
+offset_bottom = -238.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name3" type="Label" parent="."]
+offset_left = -418.766
+offset_top = -236.0
+offset_right = -339.766
+offset_bottom = -188.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name4" type="Label" parent="."]
+offset_left = -419.0
+offset_top = -186.0
+offset_right = -340.0
+offset_bottom = -126.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name5" type="Label" parent="."]
+offset_left = -419.0
+offset_top = -133.0
+offset_right = -340.0
+offset_bottom = -74.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name6" type="Label" parent="."]
+offset_left = -419.0
+offset_top = -77.0
+offset_right = -340.0
+offset_bottom = -24.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name7" type="Label" parent="."]
+offset_left = -419.0
+offset_top = -27.0
+offset_right = -340.0
+offset_bottom = 28.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name8" type="Label" parent="."]
+offset_left = -419.0
+offset_top = 26.0
+offset_right = -340.0
+offset_bottom = 75.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name9" type="Label" parent="."]
+offset_left = -419.0
+offset_top = 76.0
+offset_right = -340.0
+offset_bottom = 132.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name10" type="Label" parent="."]
+offset_left = -414.846
+offset_top = 125.0
+offset_right = -335.846
+offset_bottom = 180.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name11" type="Label" parent="."]
+offset_left = -412.769
+offset_top = 181.0
+offset_right = -333.769
+offset_bottom = 229.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="name12" type="Label" parent="."]
+offset_left = -413.807
+offset_top = 233.0
+offset_right = -334.807
+offset_bottom = 286.0
+label_settings = SubResource("LabelSettings_f65l5")
+vertical_alignment = 1
+
+[node name="rank1" type="Label" parent="."]
+offset_left = -465.501
+offset_top = -336.0
+offset_right = -386.501
+offset_bottom = -288.0
+text = "1.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank2" type="Label" parent="."]
+offset_left = -465.501
+offset_top = -286.0
+offset_right = -386.501
+offset_bottom = -238.0
+text = "2.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank3" type="Label" parent="."]
+offset_left = -465.501
+offset_top = -236.0
+offset_right = -386.501
+offset_bottom = -188.0
+text = "3.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank4" type="Label" parent="."]
+offset_left = -466.0
+offset_top = -182.952
+offset_right = -387.0
+offset_bottom = -128.952
+text = "4.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank5" type="Label" parent="."]
+offset_left = -465.501
+offset_top = -127.616
+offset_right = -386.501
+offset_bottom = -79.6155
+text = "5.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank6" type="Label" parent="."]
+offset_left = -465.501
+offset_top = -75.0
+offset_right = -386.501
+offset_bottom = -27.0
+text = "6.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank7" type="Label" parent="."]
+offset_left = -466.0
+offset_top = -24.4713
+offset_right = -387.0
+offset_bottom = 23.5287
+text = "7.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank8" type="Label" parent="."]
+offset_left = -465.501
+offset_top = 25.5287
+offset_right = -386.501
+offset_bottom = 73.5287
+text = "8.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank9" type="Label" parent="."]
+offset_left = -465.501
+offset_top = 79.7209
+offset_right = -386.501
+offset_bottom = 127.721
+text = "9.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank10" type="Label" parent="."]
+offset_left = -465.501
+offset_top = 127.625
+offset_right = -386.501
+offset_bottom = 175.625
+text = "10.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank11" type="Label" parent="."]
+offset_left = -465.501
+offset_top = 180.769
+offset_right = -386.501
+offset_bottom = 228.769
+text = "11.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank12" type="Label" parent="."]
+offset_left = -465.501
+offset_top = 234.961
+offset_right = -386.501
+offset_bottom = 282.961
+text = "12.
+"
+label_settings = SubResource("LabelSettings_f65l5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total_value1" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -323.0
+offset_right = 582.0
+offset_bottom = -296.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+
+[node name="total_value2" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -273.0
+offset_right = 582.0
+offset_bottom = -246.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+
+[node name="total_value3" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -223.0
+offset_right = 582.0
+offset_bottom = -196.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+
+[node name="total_value4" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -186.0
+offset_right = 582.0
+offset_bottom = -129.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value5" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -133.0
+offset_right = 582.0
+offset_bottom = -76.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value6" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -77.0
+offset_right = 582.0
+offset_bottom = -20.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value7" type="Label" parent="."]
+offset_left = 488.0
+offset_top = -27.0
+offset_right = 582.0
+offset_bottom = 30.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value8" type="Label" parent="."]
+offset_left = 488.0
+offset_top = 26.0
+offset_right = 582.0
+offset_bottom = 77.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value9" type="Label" parent="."]
+offset_left = 488.0
+offset_top = 76.0
+offset_right = 582.0
+offset_bottom = 127.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value10" type="Label" parent="."]
+offset_left = 488.0
+offset_top = 125.0
+offset_right = 582.0
+offset_bottom = 176.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value11" type="Label" parent="."]
+offset_left = 488.0
+offset_top = 181.0
+offset_right = 582.0
+offset_bottom = 232.0
+text = "
+"
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="total_value12" type="Label" parent="."]
+offset_left = 488.0
+offset_top = 233.0
+offset_right = 582.0
+offset_bottom = 284.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="day_count1" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -336.0
+offset_right = 598.0
+offset_bottom = -286.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count2" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -287.0
+offset_right = 598.0
+offset_bottom = -237.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count3" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -236.693
+offset_right = 598.0
+offset_bottom = -186.693
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count4" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -184.29
+offset_right = 598.0
+offset_bottom = -134.29
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count5" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -132.0
+offset_right = 598.0
+offset_bottom = -78.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count6" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -77.0
+offset_right = 598.0
+offset_bottom = -25.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count7" type="Label" parent="."]
+offset_left = -453.0
+offset_top = -25.0
+offset_right = 598.0
+offset_bottom = 27.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count8" type="Label" parent="."]
+offset_left = -453.0
+offset_top = 25.307
+offset_right = 598.0
+offset_bottom = 77.307
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count9" type="Label" parent="."]
+offset_left = -453.0
+offset_top = 74.5659
+offset_right = 598.0
+offset_bottom = 126.566
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count10" type="Label" parent="."]
+offset_left = -453.0
+offset_top = 130.0
+offset_right = 598.0
+offset_bottom = 180.0
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count11" type="Label" parent="."]
+offset_left = -453.0
+offset_top = 181.355
+offset_right = 598.0
+offset_bottom = 231.355
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="day_count12" type="Label" parent="."]
+offset_left = -453.0
+offset_top = 232.71
+offset_right = 598.0
+offset_bottom = 282.71
+label_settings = SubResource("LabelSettings_btg8a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="buy_stocks2" to="." method="_on_buy_stocks_2_pressed"]
+[connection signal="pressed" from="home_button3" to="." method="_on_home_button_3_pressed"]

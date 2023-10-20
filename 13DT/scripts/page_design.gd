@@ -14,7 +14,6 @@ var graph_category = ''
 var graph_time = 'month'
 
 @onready var graph : Line2D = $"BUY_STOCK_PAGE/stock_lines"
-
 @onready var stock_MEGA = $"BUY_STOCK_PAGE/MEGA_SELECTED"
 @onready var stock_LARGE = $"BUY_STOCK_PAGE/LARGE_SELECTED"
 @onready var stock_SMALL = $"BUY_STOCK_PAGE/SMALL_SELECTED"
@@ -31,6 +30,7 @@ var total_portfolio = 10000
 var version = 'buy'
 var confirm_buy = false
 
+# Reset the portfolio by hiding labels associated with each stock in the UI.
 func reset_portfolio():
 	for i in range(8):
 		i += 1
@@ -85,6 +85,7 @@ func updateStockLabels(userStocks, stocks, indexes):
 		l += 1
 
 	updateTotalLabel(totalShares, totalValue)
+	
 # Function to get the color for stock labels
 func getStockLabelColor(stockChange):
 	if stockChange == 'Increasing':
@@ -122,7 +123,7 @@ func updateSelectedStocklines(recent_button_index):
 		
 
 # Function to update the selected stock buy controls
-func updateSelectedStockBuyControls(recent_buy_index, isBuyPageVisible):
+func updateSelectedStockBuyControls(recent_buy_index):
 	for i in range(1, 10):
 		var stock_buy = "BUY_STOCK_PAGE/Stock_buy_selected" + str(i)
 		var stock_buys = get_node(stock_buy)
@@ -241,6 +242,7 @@ func findLowestAndHighest(list: Array):
 	maximum_graph_value = highest
 	minimum_graph_value = lowest
 
+# Graph stock information, including recent price changes, statistics, and other relevant data on the UI.
 func graph_stock(graph_category, recent_button_index, stocks, indexes):
 	var button
 	if $"BUY_STOCK_PAGE".visible == true:
@@ -321,6 +323,7 @@ func graph_stock(graph_category, recent_button_index, stocks, indexes):
 	graph.add_value(price_values)
 	update_buy_menu(stock_ticker, dictionary)
 
+# Update the buy menu in the UI with information about the selected stock, current price, and available actions (buy/sell).
 func update_buy_menu(stock_ticker, dictionary):
 	$"BUY_STOCK_PAGE/buy_menu"/Buy_ticker.text = stock_ticker
 	$"BUY_STOCK_PAGE/buy_menu"/total_cash.text = '$' + str(money)
@@ -407,9 +410,12 @@ func setElementVisibility(recent_stock_index):
 
 		# Set the visibility based on the index
 		element.visible = i + 1 == recent_stock_index
+
+# updates day counter
 func updateDayCounter():
 	$"day_Counter".text = 'DAY: ' + str(day_counter)
 	money = stock_calculation.roundToTwoDecimals(float(money))
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

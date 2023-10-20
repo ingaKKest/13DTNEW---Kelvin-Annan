@@ -1,0 +1,1344 @@
+[gd_scene load_steps=116 format=3 uid="uid://c0kpplq51ul0y"]
+
+[ext_resource type="Texture2D" uid="uid://dobcktdk1xka7" path="res://assets/models/stocks/stock_buy.jpg" id="1_w0skw"]
+[ext_resource type="Script" path="res://scripts/buy_stock_page.gd" id="2_30vih"]
+[ext_resource type="Texture2D" uid="uid://deoev0ikwjx5m" path="res://assets/models/stocks/graph_lines.jpg" id="3_81yqy"]
+[ext_resource type="Texture2D" uid="uid://cnja6grq4qxpj" path="res://assets/models/stocks/stock_line_selected.jpg" id="4_uytee"]
+[ext_resource type="FontFile" uid="uid://b3yf1mraxth7i" path="res://assets/font/regular.otf" id="5_p42n7"]
+[ext_resource type="Texture2D" uid="uid://b27r6le4bn2do" path="res://assets/models/stocks/stock_buy_lines.jpg" id="6_ycllx"]
+[ext_resource type="FontFile" uid="uid://d1v7jin4ckab1" path="res://assets/font/MADEINFINITY PERSONALUSE-Light.otf" id="7_xcq77"]
+[ext_resource type="Texture2D" uid="uid://ch1yj0cuvs7q3" path="res://assets/models/stocks/phone_clicked.jpg" id="8_a3l0f"]
+[ext_resource type="Script" path="res://scripts/stock_liness.gd" id="9_d7m17"]
+[ext_resource type="Texture2D" uid="uid://dsb2an3ls7it2" path="res://assets/models/stocks/button_buy.png" id="10_q7bpv"]
+[ext_resource type="Texture2D" uid="uid://xjotgsr4i2ht" path="res://assets/models/stocks/buy_menu.jpg" id="11_0ai3l"]
+[ext_resource type="Script" path="res://scripts/price_slider.gd" id="12_i1ku3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_obbjt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ar8g7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhhej"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e6y01"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f4qxe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ncr7i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_euw66"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aww0i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e7cbx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4lhki"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ef0j4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8bfj6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_skon7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1jqqw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lydqk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oolny"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50l5d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s8bf5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fjikk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6k6fu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x6qye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iwdd1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hq1f6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mwy3n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t44en"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b6xhq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07umh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ig5j2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5e117"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bmri2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xv3yj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tkfcn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8tcka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pbxdv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dres5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r2qgs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l0vro"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pyups"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2q7vu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qtml"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4b4jp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1qrmv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nsdng"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hojwu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vaau"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o17oh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hgfvv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n0hf8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tdu4m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jitc2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cclik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0b61j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr8ii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lmtth"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ohvx7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3grtr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g12et"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rg6rq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ji100"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5maeq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gte7p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7p4gi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wcopp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nh5lp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h5yoc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qj5k8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8edg1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jx5fd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r6ys8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2omyc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0cgn8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fj053"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aagum"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u0iri"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tqjqs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ishs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hvnua"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uufsk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nw7l5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nu6u5"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_vm0c4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6c1dk"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_po8q2"]
+font_size = 26
+font_color = Color(0.662745, 0.662745, 0.662745, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4ne54"]
+font_size = 24
+font_color = Color(0.662745, 0.662745, 0.662745, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8sa58"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pt00p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ulr1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hj0de"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wov7s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b67wb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8jlcn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tqfwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pnw0e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l1xmj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12jk8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qimob"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7dyt5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j4wds"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mjyq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ekk1h"]
+font_size = 32
+font_color = Color(1, 0, 0, 1)
+outline_color = Color(1, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cxtqx"]
+font_size = 32
+font_color = Color(1, 0, 0, 1)
+outline_color = Color(1, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qeyos"]
+font_size = 32
+font_color = Color(0, 1, 0, 1)
+outline_color = Color(1, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dl2x5"]
+font_size = 32
+font_color = Color(0, 1, 0, 1)
+outline_color = Color(1, 0, 0, 1)
+
+[node name="BUY_STOCK_PAGE" type="Sprite2D"]
+position = Vector2(578, 327)
+scale = Vector2(0.425, 0.425)
+texture = ExtResource("1_w0skw")
+script = ExtResource("2_30vih")
+
+[node name="Graph_background" type="Sprite2D" parent="."]
+position = Vector2(614.118, 54.1177)
+scale = Vector2(1.13387, 1.10919)
+texture = ExtResource("3_81yqy")
+
+[node name="MEGA_SELECTED" type="Sprite2D" parent="."]
+position = Vector2(-835.294, -715.823)
+scale = Vector2(0.277, 0.55)
+texture = ExtResource("4_uytee")
+
+[node name="LARGE_SELECTED" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-440.345, -717.647)
+scale = Vector2(0.257496, 0.55)
+texture = ExtResource("4_uytee")
+
+[node name="SMALL_SELECTED" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(407.059, -719)
+scale = Vector2(0.260204, 0.55)
+texture = ExtResource("4_uytee")
+
+[node name="MICRO_SELECTED" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(785.882, -719)
+scale = Vector2(0.253858, 0.55)
+texture = ExtResource("4_uytee")
+
+[node name="INDEX_SELECTED" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1181.52, -719)
+scale = Vector2(0.276535, 0.55)
+texture = ExtResource("4_uytee")
+
+[node name="MID_SELECTED" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-21.1765, -715.294)
+scale = Vector2(0.314149, 0.55)
+texture = ExtResource("4_uytee")
+
+[node name="MEGA" type="Button" parent="."]
+offset_left = -1038.0
+offset_top = -772.0
+offset_right = -626.0
+offset_bottom = -661.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_obbjt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ar8g7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bhhej")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e6y01")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f4qxe")
+text = "MEGA"
+flat = true
+
+[node name="LARGE" type="Button" parent="."]
+offset_left = -631.0
+offset_top = -772.0
+offset_right = -247.0
+offset_bottom = -661.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ncr7i")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_euw66")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_aww0i")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e7cbx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4lhki")
+text = "LARGE"
+flat = true
+
+[node name="MID" type="Button" parent="."]
+offset_left = -249.0
+offset_top = -767.0
+offset_right = 215.0
+offset_bottom = -665.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ef0j4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8bfj6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_skon7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1jqqw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lydqk")
+text = "MID
+"
+flat = true
+
+[node name="SMALL" type="Button" parent="."]
+offset_left = 216.0
+offset_top = -767.0
+offset_right = 598.0
+offset_bottom = -661.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_oolny")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_50l5d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s8bf5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fjikk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6k6fu")
+text = "SMALL"
+flat = true
+
+[node name="MICRO" type="Button" parent="."]
+offset_left = 597.647
+offset_top = -769.412
+offset_right = 979.647
+offset_bottom = -663.412
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_x6qye")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iwdd1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hq1f6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mwy3n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t44en")
+text = "MICRO"
+flat = true
+
+[node name="INDEX" type="Button" parent="."]
+offset_left = 974.0
+offset_top = -772.0
+offset_right = 1350.0
+offset_bottom = -666.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_b6xhq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_07umh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ig5j2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5e117")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bmri2")
+text = "INDEX
+"
+flat = true
+
+[node name="Stock_buy_lines" type="Sprite2D" parent="."]
+position = Vector2(-585.882, 54)
+scale = Vector2(1, 1.09006)
+texture = ExtResource("6_ycllx")
+
+[node name="Stock_buy_selected1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-589.235, -588.941)
+scale = Vector2(0.61, 0.69)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, -450.118)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, -311)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, -176)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, -35)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, 98)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected7" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, 241)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected8" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.588, 378)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="Stock_buy_selected9" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-590.235, 515.294)
+scale = Vector2(0.61, 0.68)
+texture = ExtResource("4_uytee")
+
+[node name="stock_buy_button1" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = -659.0
+offset_right = -136.0
+offset_bottom = -522.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xv3yj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tkfcn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8tcka")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pbxdv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dres5")
+flat = true
+
+[node name="stock_buy_button2" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = -520.0
+offset_right = -136.0
+offset_bottom = -383.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r2qgs")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_l0vro")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pyups")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2q7vu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0qtml")
+flat = true
+
+[node name="stock_buy_button3" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = -381.0
+offset_right = -136.0
+offset_bottom = -244.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4b4jp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1qrmv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nsdng")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_hojwu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6vaau")
+flat = true
+
+[node name="stock_buy_button4" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = -242.0
+offset_right = -136.0
+offset_bottom = -105.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o17oh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hgfvv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_n0hf8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tdu4m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jitc2")
+flat = true
+
+[node name="stock_buy_button5" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = -103.0
+offset_right = -136.0
+offset_bottom = 34.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cclik")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0b61j")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vr8ii")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_lmtth")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ohvx7")
+flat = true
+
+[node name="stock_buy_button6" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = 36.0
+offset_right = -136.0
+offset_bottom = 173.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3grtr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_g12et")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rg6rq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ji100")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5maeq")
+flat = true
+
+[node name="stock_buy_button7" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = 175.0
+offset_right = -136.0
+offset_bottom = 312.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gte7p")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7p4gi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wcopp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nh5lp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h5yoc")
+flat = true
+
+[node name="stock_buy_button8" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = 314.0
+offset_right = -136.0
+offset_bottom = 451.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qj5k8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8edg1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jx5fd")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_r6ys8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2omyc")
+flat = true
+
+[node name="stock_buy_button9" type="Button" parent="."]
+offset_left = -1042.0
+offset_top = 453.0
+offset_right = -136.0
+offset_bottom = 590.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0cgn8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fj053")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_aagum")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_u0iri")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tqjqs")
+flat = true
+
+[node name="buy_ticker1" type="Label" parent="."]
+offset_left = -1004.71
+offset_top = -616.47
+offset_right = -906.706
+offset_bottom = -558.47
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker2" type="Label" parent="."]
+offset_left = -1004.41
+offset_top = -468.235
+offset_right = -906.412
+offset_bottom = -410.235
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker3" type="Label" parent="."]
+offset_left = -1004.41
+offset_top = -335.0
+offset_right = -906.412
+offset_bottom = -277.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker4" type="Label" parent="."]
+offset_left = -1004.41
+offset_top = -200.0
+offset_right = -906.412
+offset_bottom = -142.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker5" type="Label" parent="."]
+offset_left = -1004.41
+offset_top = -62.0
+offset_right = -906.412
+offset_bottom = -4.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker6" type="Label" parent="."]
+offset_left = -1004.41
+offset_top = 75.0
+offset_right = -906.412
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker7" type="Label" parent="."]
+offset_left = -1004.41
+offset_top = 215.0
+offset_right = -906.412
+offset_bottom = 273.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+
+[node name="buy_ticker8" type="Label" parent="."]
+offset_left = -1004.0
+offset_top = 306.0
+offset_right = -906.0
+offset_bottom = 447.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+vertical_alignment = 1
+
+[node name="buy_ticker9" type="Label" parent="."]
+offset_left = -1004.0
+offset_top = 445.0
+offset_right = -906.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 32
+text = "APPL
+"
+vertical_alignment = 1
+
+[node name="buy_value1" type="Label" parent="."]
+offset_left = -331.765
+offset_top = -616.118
+offset_right = -198.765
+offset_bottom = -567.118
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value2" type="Label" parent="."]
+offset_left = -331.765
+offset_top = -468.118
+offset_right = -198.765
+offset_bottom = -419.118
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value3" type="Label" parent="."]
+offset_left = -331.765
+offset_top = -335.118
+offset_right = -198.765
+offset_bottom = -286.118
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value4" type="Label" parent="."]
+offset_left = -331.765
+offset_top = -200.0
+offset_right = -198.765
+offset_bottom = -151.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value5" type="Label" parent="."]
+offset_left = -331.765
+offset_top = -62.0
+offset_right = -198.765
+offset_bottom = -13.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value6" type="Label" parent="."]
+offset_left = -331.765
+offset_top = 75.0
+offset_right = -198.765
+offset_bottom = 124.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value7" type="Label" parent="."]
+offset_left = -331.765
+offset_top = 215.0
+offset_right = -198.765
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+
+[node name="buy_value8" type="Label" parent="."]
+offset_left = -332.0
+offset_top = 306.0
+offset_right = -199.0
+offset_bottom = 445.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="buy_value9" type="Label" parent="."]
+offset_left = -332.0
+offset_top = 445.0
+offset_right = -199.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 32
+text = "$1500.25"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="buy_stocks2" type="Button" parent="."]
+offset_left = -1305.89
+offset_top = -289.412
+offset_right = -1199.89
+offset_bottom = -258.412
+scale = Vector2(2, 2)
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ishs")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hvnua")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uufsk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nw7l5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nu6u5")
+text = "BUY STOCKS"
+icon = SubResource("ViewportTexture_vm0c4")
+flat = true
+alignment = 0
+
+[node name="home_button2" type="TextureButton" parent="."]
+offset_left = -1284.71
+offset_top = -508.236
+offset_right = -787.706
+offset_bottom = 41.7642
+scale = Vector2(0.3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_a3l0f")
+
+[node name="GRAPH_PRICE" type="Label" parent="."]
+offset_left = -103.529
+offset_top = -640.0
+offset_right = 159.471
+offset_bottom = -549.0
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 64
+text = "$1500.25"
+
+[node name="percentage_increase_graph" type="Label" parent="."]
+offset_left = -98.824
+offset_top = -557.0
+offset_right = 137.176
+offset_bottom = -509.0
+theme_override_font_sizes/font_size = 42
+text = "+50.17 (20.32%)"
+label_settings = SubResource("LabelSettings_6c1dk")
+
+[node name="Common_stock_label" type="Label" parent="."]
+offset_left = 1096.47
+offset_top = -557.0
+offset_right = 1332.47
+offset_bottom = -509.0
+theme_override_font_sizes/font_size = 42
+text = "Common Stock"
+label_settings = SubResource("LabelSettings_6c1dk")
+
+[node name="STATS_LABEL" type="Label" parent="."]
+offset_left = -104.0
+offset_top = 478.0
+offset_right = -33.0
+offset_bottom = 526.0
+theme_override_font_sizes/font_size = 42
+text = "OPEN
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL2" type="Label" parent="."]
+offset_left = -103.588
+offset_top = 524.706
+offset_right = 132.412
+offset_bottom = 572.706
+theme_override_font_sizes/font_size = 42
+text = "HIGH
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL3" type="Label" parent="."]
+offset_left = -103.588
+offset_top = 571.765
+offset_right = 132.412
+offset_bottom = 619.765
+theme_override_font_sizes/font_size = 42
+text = "LOW"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL4" type="Label" parent="."]
+offset_left = -103.588
+offset_top = 618.824
+offset_right = 132.412
+offset_bottom = 666.824
+theme_override_font_sizes/font_size = 42
+text = "MONTH HIGH
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL5" type="Label" parent="."]
+offset_left = -103.588
+offset_top = 668.235
+offset_right = 132.412
+offset_bottom = 716.235
+theme_override_font_sizes/font_size = 42
+text = "MONTH LOW
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL6" type="Label" parent="."]
+offset_left = 311.0
+offset_top = 478.0
+offset_right = 419.0
+offset_bottom = 526.0
+theme_override_font_sizes/font_size = 42
+text = "VOLUME"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL7" type="Label" parent="."]
+offset_left = 310.529
+offset_top = 524.706
+offset_right = 546.529
+offset_bottom = 572.706
+theme_override_font_sizes/font_size = 42
+text = "MKT CAP
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL8" type="Label" parent="."]
+offset_left = 310.529
+offset_top = 571.765
+offset_right = 546.529
+offset_bottom = 619.765
+theme_override_font_sizes/font_size = 42
+text = "EPS"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL9" type="Label" parent="."]
+offset_left = 310.529
+offset_top = 618.824
+offset_right = 546.529
+offset_bottom = 666.824
+theme_override_font_sizes/font_size = 42
+text = "DIV/YIELD
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STATS_LABEL10" type="Label" parent="."]
+offset_left = 310.529
+offset_top = 668.235
+offset_right = 546.529
+offset_bottom = 716.235
+theme_override_font_sizes/font_size = 42
+text = "ANALYSIS
+"
+label_settings = SubResource("LabelSettings_po8q2")
+
+[node name="STAT_NUMBERS" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 478.0
+offset_right = 238.0
+offset_bottom = 569.0
+theme_override_font_sizes/font_size = 26
+text = "1082.10"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS2" type="Label" parent="."]
+offset_left = -2.0
+offset_top = 524.0
+offset_right = 238.0
+offset_bottom = 615.0
+theme_override_font_sizes/font_size = 26
+text = "1082.10"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS3" type="Label" parent="."]
+offset_left = 59.0
+offset_top = 572.0
+offset_right = 238.0
+offset_bottom = 663.0
+theme_override_font_sizes/font_size = 26
+text = "1082.10"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS4" type="Label" parent="."]
+offset_left = 96.0
+offset_top = 618.0
+offset_right = 238.0
+offset_bottom = 709.0
+theme_override_font_sizes/font_size = 26
+text = "1082.10"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS5" type="Label" parent="."]
+offset_left = 85.0
+offset_top = 668.0
+offset_right = 238.0
+offset_bottom = 759.0
+theme_override_font_sizes/font_size = 26
+text = "1082.10"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS6" type="Label" parent="."]
+offset_left = 458.941
+offset_top = 478.0
+offset_right = 688.941
+offset_bottom = 569.0
+theme_override_font_sizes/font_size = 26
+text = "1082.28M"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS7" type="Label" parent="."]
+offset_left = 491.941
+offset_top = 525.0
+offset_right = 688.941
+offset_bottom = 616.0
+theme_override_font_sizes/font_size = 26
+text = "1082.28M"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS8" type="Label" parent="."]
+offset_left = 534.117
+offset_top = 571.647
+offset_right = 689.117
+offset_bottom = 662.647
+theme_override_font_sizes/font_size = 26
+text = "30"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS9" type="Label" parent="."]
+offset_left = 534.117
+offset_top = 618.824
+offset_right = 689.117
+offset_bottom = 709.824
+theme_override_font_sizes/font_size = 26
+text = "-"
+horizontal_alignment = 2
+
+[node name="STAT_NUMBERS10" type="Label" parent="."]
+offset_left = 448.941
+offset_top = 668.0
+offset_right = 696.941
+offset_bottom = 759.0
+theme_override_font_sizes/font_size = 26
+text = "STRONG BUY"
+horizontal_alignment = 2
+
+[node name="ABOUT" type="Label" parent="."]
+offset_left = 762.0
+offset_top = 478.0
+offset_right = 1329.0
+offset_bottom = 673.0
+theme_override_font_sizes/font_size = 42
+text = "Apple Inc. pioneers innovation with iconic devices like the iPhone, iPad, and Mac. Seamlessly blending design and technology, Apple revolutionizes industries and empowers global users."
+label_settings = SubResource("LabelSettings_4ne54")
+autowrap_mode = 3
+
+[node name="graph_ticker" type="Label" parent="."]
+offset_left = 1098.94
+offset_top = -640.0
+offset_right = 1335.94
+offset_bottom = -549.0
+theme_override_font_sizes/font_size = 62
+text = "APPL
+"
+horizontal_alignment = 2
+
+[node name="graph_stats" type="Label" parent="."]
+offset_left = -103.59
+offset_top = 395.294
+offset_right = 51.41
+offset_bottom = 486.294
+theme_override_font_sizes/font_size = 42
+text = "Stats
+"
+
+[node name="graph_stats2" type="Label" parent="."]
+offset_left = 762.293
+offset_top = 395.294
+offset_right = 917.293
+offset_bottom = 486.294
+theme_override_font_sizes/font_size = 42
+text = "About"
+
+[node name="stock_lines" type="Line2D" parent="."]
+position = Vector2(-85, -400)
+scale = Vector2(54.5, 26.0294)
+points = PackedVector2Array(-6.49217, 7.38983)
+width = 0.2
+default_color = Color(0, 1, 0, 1)
+script = ExtResource("9_d7m17")
+
+[node name="TIME_GRAPH_BUTTON_DAY" type="Button" parent="."]
+offset_left = 62.0
+offset_top = 285.0
+offset_right = 154.0
+offset_bottom = 367.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.25925, 0.515465, 0.161754, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8sa58")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pt00p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3ulr1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_hj0de")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wov7s")
+toggle_mode = true
+action_mode = 0
+text = "1 DAY
+"
+flat = true
+
+[node name="TIME_GRAPH_BUTTON_WEEK" type="Button" parent="."]
+offset_left = 572.0
+offset_top = 285.0
+offset_right = 693.0
+offset_bottom = 367.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.333333, 0.658824, 0.207843, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_b67wb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8jlcn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tqfwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pnw0e")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l1xmj")
+toggle_mode = true
+text = "1 WEEK
+"
+flat = true
+
+[node name="TIME_GRAPH_BUTTON_MONTH" type="Button" parent="."]
+offset_left = 1082.0
+offset_top = 285.0
+offset_right = 1237.0
+offset_bottom = 367.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.333333, 0.658824, 0.207843, 1)
+theme_override_fonts/font = ExtResource("5_p42n7")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_12jk8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qimob")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7dyt5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_j4wds")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8mjyq")
+toggle_mode = true
+text = "1 MONTH
+"
+flat = true
+
+[node name="BUY" type="TextureButton" parent="."]
+offset_left = 1176.47
+offset_top = 668.0
+offset_right = 1430.47
+offset_bottom = 794.0
+scale = Vector2(0.6, 0.6)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("10_q7bpv")
+
+[node name="SELL" type="TextureButton" parent="."]
+offset_left = 1023.53
+offset_top = 668.0
+offset_right = 1277.53
+offset_bottom = 794.0
+scale = Vector2(0.6, 0.6)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("10_q7bpv")
+
+[node name="BUY_LABEL" type="Label" parent="."]
+offset_left = 1190.65
+offset_top = 679.647
+offset_right = 1313.65
+offset_bottom = 727.647
+theme_override_font_sizes/font_size = 26
+text = "Buy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SELL_LABEL" type="Label" parent="."]
+offset_left = 1040.06
+offset_top = 679.647
+offset_right = 1163.06
+offset_bottom = 727.647
+theme_override_font_sizes/font_size = 26
+text = "Sell"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="buy_menu" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-84.7059, -30.5883)
+texture = ExtResource("11_0ai3l")
+
+[node name="exit_menu" type="TextureButton" parent="buy_menu"]
+offset_left = -1289.0
+offset_top = 360.0
+offset_right = 1435.0
+offset_bottom = 793.0
+
+[node name="exit_menu2" type="TextureButton" parent="buy_menu"]
+offset_left = -1275.0
+offset_top = -739.0
+offset_right = -908.0
+offset_bottom = 793.0
+
+[node name="exit_menu3" type="TextureButton" parent="buy_menu"]
+offset_left = -1278.0
+offset_top = -734.0
+offset_right = 1446.0
+offset_bottom = -358.0
+
+[node name="exit_menu4" type="TextureButton" parent="buy_menu"]
+offset_left = 908.0
+offset_top = -720.0
+offset_right = 1427.0
+offset_bottom = 791.0
+
+[node name="BUY_LINE" type="Sprite2D" parent="buy_menu"]
+position = Vector2(-2.35291, 303.529)
+scale = Vector2(1.21823, 0.556811)
+texture = ExtResource("4_uytee")
+
+[node name="Confirm_order_button" type="TextureButton" parent="buy_menu"]
+offset_left = -894.0
+offset_top = 250.0
+offset_right = 904.0
+offset_bottom = 362.0
+mouse_default_cursor_shape = 2
+
+[node name="current_price_label" type="Label" parent="buy_menu"]
+offset_left = -899.0
+offset_top = -287.0
+offset_right = 901.0
+offset_bottom = -239.0
+theme_override_colors/font_color = Color(1, 0.713726, 0.670588, 1)
+theme_override_font_sizes/font_size = 42
+text = "Current Buy Price: $200.32"
+label_settings = SubResource("LabelSettings_6c1dk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="warning" type="Label" parent="buy_menu"]
+visible = false
+offset_left = -896.471
+offset_top = 23.5294
+offset_right = 903.529
+offset_bottom = 71.5294
+theme_override_colors/font_color = Color(1, 0.713726, 0.670588, 1)
+theme_override_font_sizes/font_size = 42
+text = "You have reached the maximum amount of stocks"
+label_settings = SubResource("LabelSettings_ekk1h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="warning_timer" type="Timer" parent="buy_menu/warning"]
+
+[node name="warning_selling" type="Label" parent="buy_menu"]
+visible = false
+offset_left = -896.471
+offset_top = 23.5294
+offset_right = 903.529
+offset_bottom = 71.5294
+theme_override_colors/font_color = Color(1, 0.713726, 0.670588, 1)
+theme_override_font_sizes/font_size = 42
+text = "You do not own this stock"
+label_settings = SubResource("LabelSettings_cxtqx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="warning_timer" type="Timer" parent="buy_menu/warning_selling"]
+
+[node name="warning_selling2" type="Label" parent="buy_menu"]
+visible = false
+offset_left = -896.471
+offset_top = 23.5294
+offset_right = 903.529
+offset_bottom = 71.5294
+theme_override_colors/font_color = Color(1, 0.713726, 0.670588, 1)
+theme_override_font_sizes/font_size = 42
+text = "You successfully sold this stock"
+label_settings = SubResource("LabelSettings_qeyos")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="warning_timer" type="Timer" parent="buy_menu/warning_selling2"]
+
+[node name="success" type="Label" parent="buy_menu"]
+visible = false
+offset_left = -896.471
+offset_top = 23.5294
+offset_right = 903.529
+offset_bottom = 71.5294
+theme_override_colors/font_color = Color(1, 0.713726, 0.670588, 1)
+theme_override_font_sizes/font_size = 42
+text = "You successfully bought this stock"
+label_settings = SubResource("LabelSettings_dl2x5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="warning_timer" type="Timer" parent="buy_menu/success"]
+
+[node name="Buy_ticker" type="Label" parent="buy_menu"]
+offset_left = -896.0
+offset_top = -358.0
+offset_right = 899.0
+offset_bottom = -269.0
+theme_override_font_sizes/font_size = 62
+text = "APPL
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total_cash_portfolio" type="Label" parent="buy_menu"]
+offset_left = -778.824
+offset_top = -178.824
+offset_right = -466.824
+offset_bottom = -87.8235
+theme_override_font_sizes/font_size = 50
+text = "TOTAL CASH:
+"
+
+[node name="buy_bytton" type="Label" parent="buy_menu"]
+offset_left = -904.0
+offset_top = 247.0
+offset_right = 899.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 35
+text = "BUY THIS STOCK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="stock_order_amount" type="Label" parent="buy_menu"]
+offset_left = -781.0
+offset_top = -92.0
+offset_right = -120.0
+offset_bottom = -1.0
+theme_override_font_sizes/font_size = 50
+text = "+256 Stocks
+"
+
+[node name="total_cash" type="Label" parent="buy_menu"]
+offset_left = 209.0
+offset_top = -178.824
+offset_right = 753.0
+offset_bottom = -87.824
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 50
+text = "$85,491.97
+"
+horizontal_alignment = 2
+
+[node name="total_amount_spent" type="Label" parent="buy_menu"]
+offset_left = 209.0
+offset_top = -91.765
+offset_right = 753.0
+offset_bottom = -0.764999
+theme_override_fonts/font = ExtResource("7_xcq77")
+theme_override_font_sizes/font_size = 50
+text = "-$42,670.08
+"
+horizontal_alignment = 2
+
+[node name="price_slider" type="HSlider" parent="buy_menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1435.0
+offset_top = -393.0
+offset_right = -364.0
+offset_bottom = -337.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 5)
+mouse_default_cursor_shape = 2
+script = ExtResource("12_i1ku3")
+
+[connection signal="pressed" from="MEGA" to="." method="_on_mega_pressed"]
+[connection signal="pressed" from="LARGE" to="." method="_on_large_pressed"]
+[connection signal="pressed" from="MID" to="." method="_on_mid_pressed"]
+[connection signal="pressed" from="SMALL" to="." method="_on_small_pressed"]
+[connection signal="pressed" from="MICRO" to="." method="_on_micro_pressed"]
+[connection signal="pressed" from="INDEX" to="." method="_on_index_pressed"]
+[connection signal="pressed" from="stock_buy_button1" to="." method="_on_stock_buy_button_1_pressed"]
+[connection signal="pressed" from="stock_buy_button2" to="." method="_on_stock_buy_button_2_pressed"]
+[connection signal="pressed" from="stock_buy_button3" to="." method="_on_stock_buy_button_3_pressed"]
+[connection signal="pressed" from="stock_buy_button4" to="." method="_on_stock_buy_button_4_pressed"]
+[connection signal="pressed" from="stock_buy_button5" to="." method="_on_stock_buy_button_5_pressed"]
+[connection signal="pressed" from="stock_buy_button6" to="." method="_on_stock_buy_button_6_pressed"]
+[connection signal="pressed" from="stock_buy_button7" to="." method="_on_stock_buy_button_7_pressed"]
+[connection signal="pressed" from="stock_buy_button8" to="." method="_on_stock_buy_button_8_pressed"]
+[connection signal="pressed" from="stock_buy_button9" to="." method="_on_stock_buy_button_9_pressed"]
+[connection signal="pressed" from="home_button2" to="." method="_on_home_button_2_pressed"]
+[connection signal="pressed" from="TIME_GRAPH_BUTTON_DAY" to="." method="_on_time_graph_button_day_pressed"]
+[connection signal="pressed" from="TIME_GRAPH_BUTTON_WEEK" to="." method="_on_time_graph_button_week_pressed"]
+[connection signal="pressed" from="TIME_GRAPH_BUTTON_MONTH" to="." method="_on_time_graph_button_month_pressed"]
+[connection signal="pressed" from="BUY" to="." method="_on_buy_pressed"]
+[connection signal="pressed" from="SELL" to="." method="_on_sell_pressed"]
+[connection signal="pressed" from="buy_menu/exit_menu" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="buy_menu/exit_menu2" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="buy_menu/exit_menu3" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="buy_menu/exit_menu4" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="buy_menu/Confirm_order_button" to="." method="_on_confirm_order_button_pressed"]
+[connection signal="timeout" from="buy_menu/warning/warning_timer" to="." method="_on_warning_timer_timeout"]
+[connection signal="timeout" from="buy_menu/warning_selling/warning_timer" to="." method="_on_warning_timer_timeout"]
+[connection signal="timeout" from="buy_menu/warning_selling2/warning_timer" to="." method="_on_warning_timer_timeout"]
+[connection signal="timeout" from="buy_menu/success/warning_timer" to="." method="_on_warning_timer_timeout"]

@@ -11,6 +11,7 @@ var stocksByCategory = {
 	'Mid': [],
 	'Micro': []
 }
+# rounds number to two decimals
 func roundToTwoDecimals(number: float) -> float:
 	return round(number * 100) / 100
 
@@ -30,7 +31,8 @@ var chanceDict = {
 	'Micro': microCapChances
 }
 
-func set_momentum_levels(stocks):
+# sets stock momentum levels
+func set_momentum_levels():
 	for ticker in stocks:
 		stocks[ticker]['momentum_level'] = 1
 		
@@ -83,7 +85,10 @@ func getStockCategory(stockSymbol):
 		return 'Micro'
 	else:
 		return 'Small'
-		
+
+
+# Calculate the economy growth rate by aggregating contributions from various stocks,
+# factoring in their categories and company news values, and using a predefined growth rate map.
 func calculateEconomy():
 	totalEconomy = 0
 	# Iterate over each stock and calculate its contribution to the economy
@@ -115,7 +120,7 @@ func calculateEconomy():
 	return economyGrowthRate
 
 # Function to assign company news value to each stock based on chance and stock category
-func assignNewsValuesToStocks(stocks: Dictionary) -> void:
+func assignNewsValuesToStocks():
 	var currentCategory = 'Mega'
 	var stockIndex = 1
 
@@ -158,8 +163,8 @@ func getNewsValueByIndex(index):
 	return newsValues[index]
 	
 # Calculates new stock values based on predicated data
-func calculate_stocks(stocks: Dictionary) -> void:
-	assignNewsValuesToStocks(stocks)
+func calculate_stocks():
+	assignNewsValuesToStocks()
 	calculateEconomy()
 	# for loop to edit every stock in the dictionary
 	for ticker in stocks:
@@ -171,7 +176,6 @@ func calculate_stocks(stocks: Dictionary) -> void:
 		var excess_capital = stocks[ticker]['Excess capital']
 		var stock_value = stocks[ticker]['Current stock price']
 		var news_value = stocks[ticker]['Company News Value']
-		var month_graph_values = stocks[ticker]['Graph data 1 month']
 		# Assign the company news value to each stock
 		# Calculate the 1-day stock change using the calculate_stock_change function
 		var stock_change_1_day = calculate_stock_change(current_FCF, growth_rate_5_years, growth_rate_10_years, shares_outstanding, excess_capital, stock_value)
@@ -191,7 +195,8 @@ func calculate_stocks(stocks: Dictionary) -> void:
 		stocks[ticker]['Graph data 1 day'].insert(0, (stocks[ticker]['Current stock price']))
 		
 
-		
+# Calculate the 1-day stock change based on various financial parameters, including
+# Free Cash Flow, growth rates, shares outstanding, excess capital, and current stock value.
 func calculate_stock_change(
 	current_FCF: float,
 	growth_rate_5_years: float,
@@ -254,12 +259,13 @@ func updateCurrentStockPrices(index_dict):
 
 		index_dict[index]['Graph data 1 day'].insert(0, (one_day_index_increase))
 
-
+# Update stock values for each stock ticker in the specified categories based on their momentum levels.
 func day_values(stocks: Dictionary, categories: Dictionary, momentum_level_percentages: Dictionary):
 	for category in ['MEGA', 'LARGE', 'MID', 'SMALL', 'MICRO']:
 		for ticker in categories[category]:
 				update_stock(ticker, category)
 
+# Update stock information based on momentum levels and category, adjusting stock values accordingly.
 func update_stock(ticker, category):
 	var percentage = get_stock_value()
 	var momentum_level = stocks[ticker]['momentum_level']
@@ -287,9 +293,11 @@ func update_stock(ticker, category):
 	stocks[ticker]['Current stock price'] = roundToTwoDecimals(stock_price)
 	stocks[ticker]['Graph data 1 day'].insert(0, stocks[ticker]['Current stock price'])
 
+# randomly picks a number out of 100
 func get_stock_value():
 	return randf() * 100.0
 
+# Calculate stock percentage change based on momentum level, category, and predefined threshold percentages.
 func stock_percentages(momentum_level_percentages, index, level):
 	var stock_percentage = get_stock_value()
 	level = int(level) + 1
@@ -314,3 +322,7 @@ func _process(delta):
 	pass
 	
 	
+# runs when buy stock button is pressed 
+var buy_stocks_homepage = false
+func _on_buy_stocks_pressed():
+	buy_stocks_homepage = true

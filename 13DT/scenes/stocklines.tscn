@@ -1,0 +1,594 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhtb7ekm1lmd0"]
+
+[ext_resource type="Script" path="res://scripts/stocklines.gd" id="1_u15kt"]
+[ext_resource type="Texture2D" uid="uid://ctgbop2d5u7tj" path="res://assets/models/stocks/stock_lines.jpg" id="2_11fqj"]
+[ext_resource type="Texture2D" uid="uid://cnja6grq4qxpj" path="res://assets/models/stocks/stock_line_selected.jpg" id="3_nr7j8"]
+[ext_resource type="FontFile" uid="uid://b3yf1mraxth7i" path="res://assets/font/regular.otf" id="4_i0vvu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f2xnd"]
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_5wvgy"]
+font_size = 10
+font_color = Color(0.662745, 0.662745, 0.662745, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_24ie6"]
+font = ExtResource("4_i0vvu")
+font_size = 14
+
+[node name="Control2" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 395.0
+offset_top = 590.0
+offset_right = 435.0
+offset_bottom = 630.0
+script = ExtResource("1_u15kt")
+
+[node name="stockline1" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -354.0
+offset_right = 1012.0
+offset_bottom = -182.0
+scale = Vector2(1, 0.3)
+mouse_default_cursor_shape = 2
+keep_pressed_outside = true
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline2" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -304.0
+offset_right = 3083.0
+offset_bottom = -132.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline3" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -254.0
+offset_right = 3086.0
+offset_bottom = -82.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline4" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -204.0
+offset_right = 1012.0
+offset_bottom = -32.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline5" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -154.0
+offset_right = 1012.0
+offset_bottom = 18.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline6" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -104.0
+offset_right = 1012.0
+offset_bottom = 68.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline7" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -54.0
+offset_right = 1012.0
+offset_bottom = 118.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline8" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -255.0
+offset_top = -4.0
+offset_right = 1012.0
+offset_bottom = 168.0
+scale = Vector2(3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_11fqj")
+
+[node name="stockline_selected1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(251.5, -377.804)
+scale = Vector2(0.688469, 0.2385)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(253, -328.24)
+scale = Vector2(0.691841, 0.261923)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(270.5, -278.74)
+scale = Vector2(0.715441, 0.2475)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(257.5, -227.74)
+scale = Vector2(0.696561, 0.257115)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(274, -178.74)
+scale = Vector2(0.716116, 0.2475)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(278, -128.24)
+scale = Vector2(0.724208, 0.252308)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected7" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(271.5, -77.74)
+scale = Vector2(0.714093, 0.257115)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected8" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(278.5, -28.74)
+scale = Vector2(0.726231, 0.2475)
+texture = ExtResource("3_nr7j8")
+
+[node name="stockline_selected9" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(300, 20.26)
+scale = Vector2(0.755226, 0.237885)
+texture = ExtResource("3_nr7j8")
+
+[node name="ticker1" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -394.0
+offset_right = -197.0
+offset_bottom = -368.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker2" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -344.0
+offset_right = -197.0
+offset_bottom = -318.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker3" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -295.0
+offset_right = -197.0
+offset_bottom = -269.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker4" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -245.0
+offset_right = -197.0
+offset_bottom = -219.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker5" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -195.0
+offset_right = -197.0
+offset_bottom = -169.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker6" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -145.0
+offset_right = -197.0
+offset_bottom = -119.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker7" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -95.0
+offset_right = -197.0
+offset_bottom = -69.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker8" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = -45.0
+offset_right = -197.0
+offset_bottom = -19.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="ticker9" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -237.0
+offset_top = 5.0
+offset_right = -197.0
+offset_bottom = 31.0
+text = "APPL
+"
+label_settings = SubResource("LabelSettings_f2xnd")
+
+[node name="shares1" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -377.0
+offset_right = -122.0
+offset_bottom = -351.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares2" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -328.0
+offset_right = -122.0
+offset_bottom = -302.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares3" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -278.0
+offset_right = -122.0
+offset_bottom = -252.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares4" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -228.0
+offset_right = -122.0
+offset_bottom = -202.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares5" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -178.0
+offset_right = -122.0
+offset_bottom = -152.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares6" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -128.0
+offset_right = -122.0
+offset_bottom = -102.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares7" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -78.0
+offset_right = -122.0
+offset_bottom = -52.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares8" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = -28.0
+offset_right = -122.0
+offset_bottom = -2.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="shares9" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -239.0
+offset_top = 22.0
+offset_right = -122.0
+offset_bottom = 48.0
+text = "40 SHARES
+"
+label_settings = SubResource("LabelSettings_5wvgy")
+
+[node name="value1" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 681.0
+offset_top = -393.0
+offset_right = 745.0
+offset_bottom = -366.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="stock_value1" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -393.0
+offset_right = 760.0
+offset_bottom = -366.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value2" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -343.0
+offset_right = 760.0
+offset_bottom = -316.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value3" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -293.0
+offset_right = 760.0
+offset_bottom = -266.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value4" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -243.0
+offset_right = 760.0
+offset_bottom = -216.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value5" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -193.0
+offset_right = 760.0
+offset_bottom = -166.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value6" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -143.0
+offset_right = 760.0
+offset_bottom = -116.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value7" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -93.0
+offset_right = 760.0
+offset_bottom = -66.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value8" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -43.0
+offset_right = 760.0
+offset_bottom = -16.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="stock_value9" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = 7.0
+offset_right = 760.0
+offset_bottom = 34.0
+text = "$112.17"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 1
+
+[node name="value2" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -343.0
+offset_right = 746.0
+offset_bottom = -316.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value3" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -293.0
+offset_right = 746.0
+offset_bottom = -266.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value4" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -243.0
+offset_right = 746.0
+offset_bottom = -216.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value5" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -193.0
+offset_right = 746.0
+offset_bottom = -166.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value6" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -143.0
+offset_right = 746.0
+offset_bottom = -116.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value7" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -93.0
+offset_right = 746.0
+offset_bottom = -66.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value8" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = -43.0
+offset_right = 746.0
+offset_bottom = -16.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="value9" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 682.0
+offset_top = 7.0
+offset_right = 746.0
+offset_bottom = 34.0
+text = "$45,000
+"
+label_settings = SubResource("LabelSettings_24ie6")
+horizontal_alignment = 2
+
+[node name="stock_select first" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -263.0
+offset_top = -403.0
+offset_right = 764.0
+offset_bottom = -355.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+ignore_texture_size = true
+
+[connection signal="pressed" from="stockline1" to="." method="_on_stockline_1_pressed"]
+[connection signal="pressed" from="stockline2" to="." method="_on_stockline_2_pressed"]
+[connection signal="pressed" from="stockline3" to="." method="_on_stockline_3_pressed"]
+[connection signal="pressed" from="stockline4" to="." method="_on_stockline_4_pressed"]
+[connection signal="pressed" from="stockline5" to="." method="_on_stockline_5_pressed"]
+[connection signal="pressed" from="stockline6" to="." method="_on_stockline_6_pressed"]
+[connection signal="pressed" from="stockline7" to="." method="_on_stockline_7_pressed"]
+[connection signal="pressed" from="stockline8" to="." method="_on_stockline_8_pressed"]
+[connection signal="pressed" from="stock_select first" to="." method="_on_stock_select_first_pressed"]

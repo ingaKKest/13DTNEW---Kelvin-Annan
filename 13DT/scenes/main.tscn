@@ -5,5 +5,5 @@
 [node name="world" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.747782, 0)
 
-[node name="player" parent="." instance=ExtResource("5_wyi1t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.77027, -0.942952, -4.87571)
+[node name="main" parent="." instance=ExtResource("5_wyi1t")]
+position = Vector2(6.77027, -0.942952)

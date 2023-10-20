@@ -8,6 +8,7 @@ extends Line2D
 
 var graph : Array
 
+# Create a graph by processing and generating data points based on the provided graph values.
 func create_graph() -> void:
 	var length : int = len(graph)
 
@@ -43,18 +44,21 @@ func create_graph() -> void:
 			
 	points = points_
 
+# Pop values from the graph data if the maximum number of points is reached, ensuring the graph stays within the specified limit.
 func pop_values() -> void:
 	if graph_max_points != 0:
 		if len(graph) > graph_max_points:
 			graph.pop_front()
 			pop_values()
-			
+
+# Reverse the order of elements in the input list and return a new list with the reversed order.
 func reverse_list(input_list):
 	var reversed_list = []
 	for i in range(input_list.size() - 1, -1, -1):
 		reversed_list.append(input_list[i])
 	return reversed_list
 	
+# Add a value to the graph by first reversing the list, updating the graph data, and managing the number of graph points.
 func add_value(value):
 		value = reverse_list(value)
 		graph = value

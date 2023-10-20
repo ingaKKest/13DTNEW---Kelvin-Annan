@@ -1,0 +1,108 @@
+[gd_scene load_steps=17 format=3 uid="uid://lmwb73u4iqij"]
+
+[ext_resource type="Texture2D" uid="uid://ddikp7vtoqltk" path="res://assets/models/stocks/stock-home-page.jpg" id="1_as02g"]
+[ext_resource type="Script" path="res://scripts/calculating_stock_values.gd" id="2_pw0gx"]
+[ext_resource type="Texture2D" uid="uid://d2s71kvej1tcd" path="res://assets/models/stocks/homescreen.PNG" id="3_jhw3g"]
+[ext_resource type="Texture2D" uid="uid://ch1yj0cuvs7q3" path="res://assets/models/stocks/phone_clicked.jpg" id="4_i4ds5"]
+[ext_resource type="Script" path="res://scripts/StockData.gd" id="5_cj7jp"]
+[ext_resource type="Texture2D" uid="uid://bvp8kfi8tnk5q" path="res://assets/models/stocks/cash.PNG" id="6_xaq64"]
+[ext_resource type="FontFile" uid="uid://b3yf1mraxth7i" path="res://assets/font/regular.otf" id="7_cw803"]
+[ext_resource type="Texture2D" uid="uid://dvflk8r643fwr" path="res://assets/models/stocks/stock_icon.png" id="8_0keyv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fp11h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yeugt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7l0q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcuvt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7788c"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_hwlv0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8f8lt"]
+font = ExtResource("7_cw803")
+font_size = 125
+
+[sub_resource type="LabelSettings" id="LabelSettings_2rglo"]
+font_size = 42
+font_color = Color(0, 0, 0, 1)
+
+[node name="stock_homepage" type="Sprite2D"]
+position = Vector2(579, 326)
+scale = Vector2(0.425, 0.425)
+texture = ExtResource("1_as02g")
+script = ExtResource("2_pw0gx")
+
+[node name="page_design" type="Sprite2D" parent="."]
+position = Vector2(-2.35297, -1.17644)
+scale = Vector2(1.70163, 1.68922)
+texture = ExtResource("3_jhw3g")
+
+[node name="buy_stocks" type="Button" parent="."]
+offset_left = -1308.24
+offset_top = -287.059
+offset_right = -1204.24
+offset_bottom = -256.059
+scale = Vector2(2, 2)
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.662745, 0.662745, 0.662745, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fp11h")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yeugt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m7l0q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_vcuvt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7788c")
+text = "BUY STOCKS"
+icon = SubResource("ViewportTexture_hwlv0")
+flat = true
+alignment = 0
+
+[node name="home_button" type="TextureButton" parent="."]
+offset_left = -1287.06
+offset_top = -505.883
+offset_right = -790.059
+offset_bottom = 44.1172
+scale = Vector2(0.3, 0.3)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_i4ds5")
+script = ExtResource("5_cj7jp")
+
+[node name="cash_symbol" type="Sprite2D" parent="."]
+position = Vector2(-133.199, -440.563)
+scale = Vector2(0.2, 0.161)
+texture = ExtResource("6_xaq64")
+
+[node name="total_portfolio" type="Label" parent="."]
+offset_left = -1028.0
+offset_top = -760.0
+offset_right = 1365.0
+offset_bottom = -329.0
+text = "10456.56"
+label_settings = SubResource("LabelSettings_8f8lt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money_total2" type="Label" parent="."]
+offset_left = -82.353
+offset_top = -472.941
+offset_right = 154.647
+offset_bottom = -411.941
+text = "67890.34"
+label_settings = SubResource("LabelSettings_2rglo")
+
+[node name="stock_amount" type="Label" parent="."]
+offset_left = 317.176
+offset_top = -473.0
+offset_right = 799.176
+offset_bottom = -412.0
+text = "83650.67
+"
+label_settings = SubResource("LabelSettings_2rglo")
+
+[node name="stock_symbol" type="Sprite2D" parent="."]
+position = Vector2(261.176, -444.706)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_0keyv")
+
+[connection signal="pressed" from="buy_stocks" to="." method="_on_buy_stocks_pressed"]
